@@ -3,4 +3,5 @@ Proyecto de paralelizacion de la interpolacion de lagrange encontrada en:
 https://www.codewithc.com/c-program-for-lagrange-interpolation/
 
 TODO:
-* Hacer el makefile
+* Agregar el SBATCH y un Makefile a cada paralelizacion
+* Hacer un makefile global
