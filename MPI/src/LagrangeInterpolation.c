@@ -1,6 +1,7 @@
 #include <mpi.h>
 #include <stdio.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #define MASTER 0        /* task ID of master task */
 
@@ -80,6 +81,8 @@ int main (int argc, char *argv[])
 	return MPI_Finalize();   
     //}
 =======
+=======
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 main()
 {
     float x[100],y[100],a,s=1,t=1,k=0;
@@ -120,5 +123,8 @@ main()
         printf("\n\n Do you want to continue?\n\n Press 1 to continue and any other key to exit");
         scanf("%d",&d);
     }
+<<<<<<< HEAD
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+=======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 }
