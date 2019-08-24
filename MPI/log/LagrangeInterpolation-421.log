@@ -1,0 +1,38 @@
+mpicc src/LagrangeInterpolation.c -o bin/LagrangeInterpolation 
+./bin/LagrangeInterpolation < input/dataset.big
+
+
+ Enter the number of the terms of the table: 
+
+ Enter the respective values of the variables x and y: 
+
+
+ The table you entered is as follows :
+
+0.000	0.000
+10.000	25.169
+15.832	27.846
+25.584	32.263
+36.014	38.790
+46.621	47.338
+57.311	57.007
+68.058	67.216
+78.848	77.698
+89.675	88.334
+100.534	99.067
+111.422	109.866
+122.335	120.715
+133.272	131.604
+144.231	142.525
+155.210	153.474
+166.208	164.448
+177.224	175.444
+188.257	186.459
+199.305	197.493
+ 
+
+
+ Enter the value of the x to find the respective value of y
+
+
+0/n1/n2/n3/n4/n5/n6/n7/n8/n9/n10/n11/n12/n13/n14/n15/n16/n17/n18/n19/n20/n
