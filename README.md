@@ -1,4 +1,4 @@
-# ProyectoFinal
+# Paralelizacion de la interpolación de lagrange en CUDA, OpenMP y MPI
 Proyecto de paralelizacion de la interpolacion de lagrange encontrada en: 
 https://www.codewithc.com/c-program-for-lagrange-interpolation/
 
