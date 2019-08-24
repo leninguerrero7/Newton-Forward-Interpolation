@@ -1,6 +1,7 @@
 #include<stdio.h>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 __global__ void interpolate(float * x, float * y, float a, float * k, int n){
     int i,j;
     i = blockIdx.x * blockDim.x + threadIdx.x;
@@ -57,6 +58,8 @@ int main()
 =======
 =======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+=======
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 main()
 {
     float x[100],y[100],a,s=1,t=1,k=0;
@@ -66,6 +69,9 @@ main()
     printf("\n\n Enter the respective values of the variables x and y: \n");
     for(i=0; i<n; i++)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+=======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 =======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
@@ -76,7 +82,11 @@ main()
     printf("\n\n The table you entered is as follows :\n\n");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     for(i=0; i<N; i++)
+=======
+    for(i=0; i<n; i++)
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 =======
     for(i=0; i<n; i++)
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
@@ -87,6 +97,7 @@ main()
         printf("%0.3f\t%0.3f",x[i],y[i]);
         printf("\n");
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -132,6 +143,8 @@ main()
 =======
 =======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+=======
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
     while(d==1)
     {
         printf(" \n\n\n Enter the value of the x to find the respective value of y\n\n\n");
@@ -155,6 +168,9 @@ main()
         scanf("%d",&d);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+=======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 =======
 >>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0

@@ -52,7 +52,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+
 # Logs
 log/
-=======
 
