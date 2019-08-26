@@ -7,7 +7,7 @@ bin/newtonforwardinterpolation : src/newtonforwardinterpolation.c
 	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation 
 
 run: bin/newtonforwardinterpolation
-	./bin/newtonforwardinterpolation < dataset.big
+	./bin/newtonforwardinterpolation < dataset.small
 
 clean : 
 	rm bin/*
