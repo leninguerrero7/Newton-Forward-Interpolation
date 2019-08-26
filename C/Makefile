@@ -4,7 +4,7 @@ build : src/newtonforwardinterpolation.c
 	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation 
 
 bin/newtonforwardinterpolation : src/newtonforwardinterpolation.c
-	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation 
+	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation
 
 run: bin/newtonforwardinterpolation
 	./bin/newtonforwardinterpolation < input/dataset.small
