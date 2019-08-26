@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     for (k = taskid+1; k <= ORDER; k+=numtasks)
     {
         nr *= p - k + 1;
-        dr *= k;
+        dr *= k;    
         yp += (nr / dr) * diff[i + (MAXN + 1) * k];
     }
 
