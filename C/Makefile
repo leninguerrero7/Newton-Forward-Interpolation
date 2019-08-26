@@ -1,13 +1,13 @@
 .PHONY: run clean build
 
-build : src/LagrangeInterpolation.c
-	gcc src/LagrangeInterpolation.c -o bin/LagrangeInterpolation 
+build : src/newtonforwardinterpolation.c
+	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation 
 
-bin/LagrangeInterpolation : src/LagrangeInterpolation.c
-	gcc src/LagrangeInterpolation.c -o bin/LagrangeInterpolation 
+bin/newtonforwardinterpolation : src/newtonforwardinterpolation.c
+	gcc src/newtonforwardinterpolation.c -o bin/newtonforwardinterpolation 
 
-run: bin/LagrangeInterpolation
-	./bin/LagrangeInterpolation < dataset.big
+run: bin/newtonforwardinterpolation
+	./bin/newtonforwardinterpolation < dataset.big
 
 clean : 
 	rm bin/*
