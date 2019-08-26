@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --partition=normal
-#SBATCH --output=log/LagrangeInterpolation-%j.log
-#SBATCH --error=log/LagrangeInterpolation-%j.log
-#SBATCH --nodes=1
-#SBATCH --ntasks=8
+#SBATCH --output=log/newtonforwardinterpolation-%j.log
+#SBATCH --error=log/newtonforwardinterpolation-%j.log
+#SBATCH --nodes=2
+#SBATCH --ntasks=16
 
 module load mpi/openmpi/gcc-5.3.0/Ethernet/4.0.1
 make run
