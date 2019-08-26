@@ -1,12 +1,9 @@
 #include<stdio.h>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 __global__ void interpolate(float * x, float * y, float a, float * k, int n){
     int i,j;
     i = blockIdx.x * blockDim.x + threadIdx.x;
 
-    __shared__ float ss[2000], ts[2000], ks[2000];
+    __shared__ float ss[100], ts[100], ks[100];
     
     if(i<n)
     {
@@ -37,11 +34,11 @@ int main()
 {
     float *x, *y, *d_x, *d_y;
     float a, k, *d_k;  
-    size_t size = 2000 * sizeof(float);
+    size_t size = 100 * sizeof(float);
     cudaEvent_t start, stop;
     
-    x = new float[2000];
-    y = new float[2000];
+    x = new float[100];
+    y = new float[100];
     cudaMalloc(&d_x, size);
     cudaMalloc(&d_y, size);
     cudaMalloc(&d_k, sizeof(float));
@@ -55,54 +52,17 @@ int main()
     printf("%d", N);
     printf("\n\n Enter the respective values of the variables x and y: \n");
     for(i=0; i<N; i++)
-=======
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-main()
-{
-    float x[100],y[100],a,s=1,t=1,k=0;
-    int n,i,j,d=1;
-    printf("\n\n Enter the number of the terms of the table: ");
-    scanf("%d",&n);
-    printf("\n\n Enter the respective values of the variables x and y: \n");
-    for(i=0; i<n; i++)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
     {
         scanf ("%f",&x[i]);
         scanf("%f",&y[i]);
     }
     printf("\n\n The table you entered is as follows :\n\n");
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     for(i=0; i<N; i++)
-=======
-    for(i=0; i<n; i++)
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
-    for(i=0; i<n; i++)
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
-    for(i=0; i<n; i++)
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
     {
         printf("%0.3f\t%0.3f",x[i],y[i]);
         printf("\n");
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
- 
-    
     cudaMemcpy(d_x, x, size, cudaMemcpyHostToDevice);
     cudaMemcpy(d_y, y, size, cudaMemcpyHostToDevice);
     //while(d==1)
@@ -140,38 +100,4 @@ main()
     delete [] y;
     cudaFree(d_x);
     cudaFree(d_y);
-=======
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-    while(d==1)
-    {
-        printf(" \n\n\n Enter the value of the x to find the respective value of y\n\n\n");
-        scanf("%f",&a);
-        for(i=0; i<n; i++)
-        {
-            s=1;
-            t=1;
-            for(j=0; j<n; j++)
-            {
-                if(j!=i)
-                {
-                    s=s*(a-x[j]);
-                    t=t*(x[i]-x[j]);
-                }
-            }
-            k=k+((s/t)*y[i]);
-        }
-        printf("\n\n The respective value of the variable y is: %f",k);
-        printf("\n\n Do you want to continue?\n\n Press 1 to continue and any other key to exit");
-        scanf("%d",&d);
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 }

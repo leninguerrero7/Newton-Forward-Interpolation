@@ -1,31 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-build : bin/LagrangeInterpolation 
-=======
-build : bin/LagrangeInterpolation
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
-build : bin/LagrangeInterpolation
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
-build : bin/LagrangeInterpolation
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
+.PHONY: run clean build
+
+build : src/LagrangeInterpolation.c
+	mpicc src/LagrangeInterpolation.c -o bin/LagrangeInterpolation 	
 
 bin/LagrangeInterpolation : src/LagrangeInterpolation.c
 	mpicc src/LagrangeInterpolation.c -o bin/LagrangeInterpolation 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 run : bin/LagrangeInterpolation
 	./bin/LagrangeInterpolation < input/dataset.big
 
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
-=======
->>>>>>> 60b9fc31328e83730f9afbaa5cae5f1b1c57f5a0
 clean : 
 	rm bin/*

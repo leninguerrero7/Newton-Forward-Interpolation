@@ -1,8 +1,8 @@
 build:
-	make -C CUDA
-	make -C MPI
-	make -C OpenMP
-	make -C C
+	make build -C CUDA
+	make build -C MPI
+	make build -C OpenMP
+	make build -C C
 clean: 
 	make clean -C CUDA
 	make clean -C MPI
